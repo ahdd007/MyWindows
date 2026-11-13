@@ -15,15 +15,17 @@ Windows 10/11 的各种调优工具，系统优化，游戏调优。
 
 - **CTT 本地版**（无需魔法）
   - 文件：`CTT本地运行版.zip`
-  - 链接：[百度网盘](https://pan.baidu.com/s/1toQ7lUsZ7lInEiB7WiVOSQ?pwd=Wz07) 提取码：`Wz07`
+  - 链接：[百度网盘](通过网盘分享的文件：CTT本地运行版（无需魔法）
+( https://pan.baidu.com/s/14SobtlO8k5r846RtA646FQ?pwd=Wz07 提取码: Wz07) 提取码：`Wz07`
 
 - **系统相关优化**
   - 文件：`系统优化.zip`
-  - 链接：[百度网盘](https://pan.baidu.com/s/1YJ_l0bLe_12pLDVmHyCQWw?pwd=Wz07) 提取码：`Wz07`
+  - 链接：[百度网盘]通过网盘分享的文件：系统优化
+( https://pan.baidu.com/s/1-5YG940FuAvk7b39s0sraA?pwd=Wz07 提取码: Wz07) 提取码：`Wz07`
 
 - **超频工具**
   - 我用夸克网盘给你分享了「nvpwrcontrol笔记本解锁功耗墙超频」
-  - 链接：[夸克网盘](https://pan.quark.cn/s/318f7c87b732?pwd=wvpY) 提取码：`wvpY`
+  - 链接：https://pan.quark.cn/s/f618631d5e35?pwd=jZ9d 提取码：jZ9d`
 
 - **老鹰调试**
   - 我用夸克网盘给你分享了「LaoYing Toolkit v1(1).09」
