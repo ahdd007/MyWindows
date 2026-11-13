@@ -1,0 +1,53 @@
+双击打开Ancels性能批处理
+当提示Do you want to Create a Restore Point? Yes = 1 No = 2
+1是备份系统还原，2是不备份系统还原，你们输入1回车，以防万一
+
+PS:该工具来源于网络，深情电竞无权翻译，非常抱歉，输入[*]内数字运行命令
+
+调整窗口大小...
+
+Performance Optimizations = 性能优化（约等于深情一键window优化）
+KBM Optimizations = KBM 优化（我也不知道kbm是什么，但是测试是没有任何问题的）
+Disable Telemetry = 禁用遥测（英伟达和系统遥测
+Network = 网络 （笔记本不建议使用，我们没有笔记本没办法测试）
+Debloat Windows = 卸载系统臃肿软件（计算器,Xbox，照片以及服务进程等乱七八糟的）
+Other = 其他
+
+Menu = 回到菜单
+Exit = 关闭cmd
+
+Performance Optimizations（性能优化）：
+输入1即可等待10秒即可。
+
+KBM Optimizations（KBM 优化):
+输入2即可等待10秒后会有警告一个如下：（笔记本选1，台式选2）
+原文：
+Do you use the touchpad on a laptop?
+Yes = 1 No = 2
+翻译：
+您是否在笔记本电脑上使用触摸板？
+是 = 1 否 = 2
+
+Network（网络）：
+原文：
+Network Optimizations can cause better/worse results depending on the user, results may vary.
+Would you like to Create a Restore Point before Optimizing your Network? Yes = 1 No = 2 Go back to Menu = 3
+翻译：
+网络优化可能会导致更好/更差的结果，具体取决于用户，结果可能会有所不同。
+是否要在优化网络之前创建还原点？是 = 1 否 = 2 返回菜单 = 3
+
+Debloat Windows（卸载系统臃肿软件）：
+Remove Powershell Packages = 删除 Powershell 包
+Disable Cortana = 禁用 Cortana
+Disable Unnecessary Services = 禁用不必要的服务
+Disable OneDrive = 禁用 OneDrive（微软云盘）
+PC Cleaner = 清理电脑缓存垃圾
+Go Back to Menu = 返回菜单
+
+Other（其他）：
+Disable Drivers = 禁用驱动程序（禁用没用的如：高精度计时器等等...)
+Power Plan = 电源计划(并非深情电竞电源）
+KBoost = KBoost（无法翻译，抱歉）
+Disable Devices = 禁用设备
+Run OOSU = 运行 OOSU
+Go Back to Menu = 返回菜单

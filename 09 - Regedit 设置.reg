@@ -1,0 +1,832 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate]
+"value"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+; 禁用驱动程序更新
+; 禁用驱动程序搜索
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+; UAC - 永不通知
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"PromptOnSecureDesktop"=dword:00000000
+"EnableLUA"=dword:00000000
+"ConsentPromptBehaviorAdmin"=dword:00000000
+
+; UAC - 禁用
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000000
+
+; 重启后使用我的登录信息 - 禁用 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000001
+
+; 禁用自动维护
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"MaintenanceDisabled"=dword:00000001
+
+; 关闭微软消费者体验 (GPEDIT)
+; 启动时禁用应用程序建议  
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+; 禁用快速启动
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000
+
+; 禁用功率节流
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+; 禁用幽灵和熔断
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"FeatureSettingsOverride"=dword:00000003
+"FeatureSettingsOverrideMask"=dword:00000003
+
+; 处理器调度
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+
+; 网络节流
+; 系统响应速度
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
+"SystemResponsiveness"=dword:00000000
+
+; 游戏时间安排
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="False"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000006
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; 禁用寻呼执行器
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"DisablePagingExecutive"=dword:00000001
+
+; 禁用游戏栏 1
+[HKEY_CURRENT_USER\System\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+"GameDVR_FSEBehaviorMode"=dword:00000002
+"GameDVR_HonorUserFSEBehaviorMode"=dword:00000001
+"GameDVR_DXGIHonorFSEWindowsCompatible"=dword:00000001
+"GameDVR_EFSEFeatureFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+"value"=dword:00000000
+
+; WINAERO TWEAKS
+; 禁用允许更改桌面图标的主题
+; 禁用允许主题更改鼠标指针的功能
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes]
+"ThemeChangesDesktopIcons"=dword:00000000
+"ThemeChangesMousePointers"=dword:00000000
+
+; 禁用广告和不受欢迎的应用程序
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SilentInstalledAppsEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SoftLandingEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"RotatingLockScreenEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"RotatingLockScreenOverlayEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-310093Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-314563Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338387Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338388Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338389Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338389Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338393Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-353698Enabled"=dword:00000000
+
+; 停用气动振动
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisallowShaking"=dword:00000001
+
+; 禁止在商店中查找应用程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoUseStoreOpenWith"=dword:00000001
+
+; 禁止下载
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+"SaveZoneInformation"=dword:00000001
+
+; 禁用驱动程序更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+; 禁止安装恶意软件清除工具
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+; 禁用时间轴
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000
+
+; Windows 更新从不通知也从不安装 (GPEDIT)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"AUOptions"=dword:00000002
+
+; 禁用错误报告
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+; 关闭休眠 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000
+
+; 菜单显示延迟
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="0"
+
+; 禁用可以打开此类文件的新应用程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoNewAppAlert"=dword:00000001
+
+; 显示 BSOD 的详细信息，而不是悲伤的笑脸
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\CrashControl]
+"DisplayParameters"=dword:00000001
+
+; 操作中心
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableNotificationCenter"=dword:00000000
+
+; 禁用实时磁贴
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoTileApplicationNotification"=dword:00000001
+
+; 禁用人物栏
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"HidePeopleBar"=dword:00000001
+
+; 操作中心的快速操作按钮
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shell\ActionCenter\Quick Actions]
+"PinnedQuickActionSlotCount"=dword:00000000
+
+; 禁用 Windows 任务栏中的网络搜索
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+"CortanaConsent"=dword:00000000
+
+; 禁用悬停选择虚拟桌面
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"HoverSelectDesktops"=dword:00000000
+
+; 针脚 0 连接到任务栏
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"TaskbarCapacity"=dword:00000000
+
+; 壁纸质量 100%
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"JPEGImportQuality"=dword:00000100
+
+; 禁用自动发现文件夹类型
+[-HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags]
+
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified"
+
+; 从文件资源管理器中移除 3D 对象
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}]
+
+; 从文件资源管理器中删除家庭组
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder]
+"Attributes"=dword:b0940064
+
+[HKEY_CLASSES_ROOT\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder]
+"Attributes"=dword:b0940064
+
+; 禁用跳转列表
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackDocs"=dword:00000000
+
+; 禁用搜索历史记录
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+
+; 从文件资源管理器中移除一个驱动器
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; 禁用行政共享 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"AutoShareWks"=dword:00000000
+
+; 禁用自动更新商店应用程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002
+
+; 禁用天线
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+; 禁用快捷方式的"- 快捷方式 "文本
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"link"=hex:00,00,00,00
+
+; 禁用火狐浏览器更新
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Mozilla\Firefox]
+"DisableAppUpdate"=dword:00000001
+
+; 鼠标修复
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+
+"MouseSensitivity"="10"
+"SmoothMouseXCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	C0,CC,0C,00,00,00,00,00,\
+	80,99,19,00,00,00,00,00,\
+	40,66,26,00,00,00,00,00,\
+	00,33,33,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+	00,00,00,00,00,00,00,00,\
+	00,00,38,00,00,00,00,00,\
+	00,00,70,00,00,00,00,00,\
+	00,00,A8,00,00,00,00,00,\
+	00,00,E0,00,00,00,00,00
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+
+"MouseHoverTime"="0"
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+; 从不反馈 频率
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=-
+
+; 禁用鼠标键 键盘快捷方式
+[HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
+"Flags"="186"
+"MaximumSpeed"="40"
+"TimeToMaximumSpeed"="3000"
+
+; 自动关闭时区设置
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters]
+"Type"="NoSync"
+
+; 窗户颜色 默认色
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"AccentColor"=dword:ffd77800
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentColorMenu"=dword:ff484a4c
+"StartColorMenu"=dword:ff333536
+"AccentPalette"=hex:9b,9a,99,00,84,83,81,00,6d,6b,6a,00,4c,4a,48,00,36,35,33,\
+  00,26,25,24,00,19,19,19,00,10,7c,10,00
+  
+  [HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"AccentColor"=dword:ff484a4c
+"ColorizationColor"=dword:c44c4a48
+"ColorizationAfterglow"=dword:c44c4a48
+
+; 禁用透明度
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"EnableTransparency"=dword:00000000
+
+; 禁用登录背景图像模糊
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableSmartScreen"=dword:00000000
+"EnableActivityFeed"=dword:00000000
+"PublishUserActivities"=dword:00000000
+"UploadUserActivities"=dword:00000000
+"DisableLogonBackgroundImage"=dword:00000000
+"DisableAcrylicBackgroundOnLogon"=dword:00000001
+
+; 显示登录图标 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"UseDefaultTile"=dword:00000001
+
+; 隐藏任务栏按钮上的徽章
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarBadges"=dword:00000000
+
+; 从开始菜单移除显示应用程序列表
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartMenuMorePrograms"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartMenuMorePrograms"=dword:00000000
+
+; 禁用在开始菜单上显示已添加的应用程序列表
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"HideRecentlyAddedApps"=dword:00000001
+
+; 系统图标 操作中心
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableNotificationCenter"=dword:00000000
+
+; 让 Windows 管理我的默认打印机 关闭
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows]
+"LegacyDefaultPrinterMode"=dword:00000001
+
+; 将鼠标悬停在非活动窗口上时将其滚动 关闭
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MouseWheelRouting"=dword:00000000
+
+; 关闭打字功能
+[HKEY_CURRENT_USER\Software\Microsoft\TabletTip\1.7]
+"EnableTextPrediction"=dword:00000000
+"EnablePredictionSpaceInsertion"=dword:00000000
+"EnableDoubleTapSpace"=dword:00000000
+
+; 关闭 USB 错误通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Shell\USB]
+"NotifyOnUsbErrors"=dword:00000000
+
+; 虚拟桌面 AlL 桌面
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"VirtualDesktopTaskbarFilter"=dword:00000000
+"VirtualDesktopAltTabFilter"=dword:00000000
+
+; 禁用键盘热键
+[HKEY_CURRENT_USER\Keyboard Layout\Toggle]
+"Language Hotkey"="3"
+"Hotkey"="3"
+"Layout Hotkey"="3"
+
+; 隐藏语言栏
+[HKEY_CURRENT_USER\Software\Microsoft\CTF\LangBar]
+"ShowStatus"=dword:00000003
+"ExtraIconsOnMinimized"=dword:00000000
+"Transparency"=dword:000000ff
+"Label"=dword:00000000
+
+; 关闭睡眠和锁定电源选项
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowSleepOption"=dword:00000000
+"ShowLockOption"=dword:00000000
+
+; 声音传播无所作为
+[HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio]
+"UserDuckingPreference"=dword:00000003
+
+; 关闭增强指针精度
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+; 鼠标指针方案 无
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"AppStarting"=hex(2):00,00
+"Arrow"=hex(2):00,00
+"ContactVisualization"=dword:00000001
+"Crosshair"=hex(2):00,00
+"GestureVisualization"=dword:0000001f
+"Hand"=hex(2):00,00
+"Help"=hex(2):00,00
+"IBeam"=hex(2):00,00
+"No"=hex(2):00,00
+"NWPen"=hex(2):00,00
+"Scheme Source"=dword:00000000
+"SizeAll"=hex(2):00,00
+"SizeNESW"=hex(2):00,00
+"SizeNS"=hex(2):00,00
+"SizeNWSE"=hex(2):00,00
+"SizeWE"=hex(2):00,00
+"UpArrow"=hex(2):00,00
+"Wait"=hex(2):00,00
+@=""
+
+; 删除防火墙规则
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
+
+; 私下关闭电话 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall]
+"Value"="Deny"
+
+; 打开硬件加速 GPU 调度
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"HwSchMode"=dword:00000002
+
+; 禁用允许通知播放声音
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND"=dword:00000000
+
+; 禁用从这些发件人获取通知 设置
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel]
+"Enabled"=dword:00000000
+
+; 禁用从这些发件人获取通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000
+
+; 禁用在锁屏上显示通知
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications]
+"LockScreenToastEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+
+; 使用 swift 配对对时禁用显示连接通知
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Bluetooth]
+"QuickPair"=dword:00000000
+
+; 禁止在锁屏上显示提醒和网络电话来电
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK"=dword:00000000
+
+; 禁用在触摸屏幕时显示触摸点周围的视觉反馈
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"ContactVisualization"=dword:00000000
+"GestureVisualization"=dword:00000000
+
+; 禁用删除应用程序不使用的临时文件
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy]
+"04"=dword:00000000
+"01"=dword:00000000
+"2048"=dword:00000000
+"08"=dword:00000000
+"256"=dword:00000000
+"32"=dword:00000000
+
+; 禁用输入表情符号后不自动关闭面板的功能
+[HKEY_CURRENT_USER\Software\Microsoft\Input\Settings]
+"EnableExpressiveInputEmojiMultipleSelection"=dword:00000000
+
+; 禁用 Defender
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection]
+"DisableRealtimeMonitoring"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SubmitSamplesConsent"=dword:00000002
+"SpynetReporting"=dword:00000000
+
+; 防篡改保护 - 这不会粘住
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features]
+"TamperProtection"=dword:00000000
+
+; 禁用 Microsoft Edge 的智能屏幕
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000000
+
+; 禁用 Windows 安全通知图标
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray]
+"HideSystray"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run]
+"SecurityHealth"=hex:07,00,00,00,a7,c0,ae,8e,3b,30,d6,01
+
+; 当别人与我共享或编辑我的共享文件时禁用 OneDrive 显示通知
+; 禁用 OneDrive 在云中删除大量文件时通知我的功能
+[HKEY_CURRENT_USER\Software\Microsoft\OneDrive\Accounts\Personal]
+"ShareNotificationDisabled"=dword:00000001
+"MassDeleteNotificationDisabled"=dword:00000001
+
+; 故障排除 - 不要运行任何故障排除程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsMitigation]
+"UserPreference"=dword:00000001
+
+; 禁用相机 选择哪些 Microsoft Store 应用程序可以访问您的相机 
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Allow"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.MicrosoftEdge_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.Office.OneNote_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.SkypeApp_kzf8qxf38zg5c]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.Win32WebViewHost_cw5n1h2txyewy]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.Windows.Photos_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.WindowsCamera_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.WindowsStore_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam\NonPackaged]
+"Value"="Allow"
+
+; Microphone Disable Choose Which Microsoft Store Apps Can Access Your Microphone
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone]
+"Value"="Allow"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.549981C3F5F10_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.Microsoft3DViewer_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.MicrosoftEdge_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.MixedReality.Portal_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.Office.OneNote_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.SkypeApp_kzf8qxf38zg5c]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.Win32WebViewHost_cw5n1h2txyewy]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.Windows.Photos_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.WindowsCamera_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.WindowsStore_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.XboxApp_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe]
+"Value"="Deny"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged]
+"Value"="Allow"
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone\NonPackaged\C:#Windows#System32#rundll32.exe]
+"LastUsedTimeStart"=hex(b):74,e1,3b,bf,30,30,d6,01
+"LastUsedTimeStop"=hex(b):35,99,ef,bf,30,30,d6,01
+
+; 禁用语音激活
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps]
+"AgentActivationEnabled"=dword:00000000
+"AgentActivationLastUsed"=dword:00000000
+
+; 关闭安全搜索
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"SafeSearchMode"=dword:00000000
+
+; 禁用云搜索
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+; 禁用设备历史记录 - 在沉浸式控制面板中不显示已禁用
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"DeviceHistoryEnabled"=dword:00000000
+
+; 禁用触摸反馈
+[HKEY_CURRENT_USER\Control Panel\Cursors]
+"ContactVisualization"=dword:00000000
+
+; 禁用放大跟随
+[HKEY_CURRENT_USER\Software\Microsoft\ScreenMagnifier]
+"RunningState"=dword:00000000
+"FollowMouse"=dword:00000000
+"FollowFocus"=dword:00000000
+"FollowCaret"=dword:00000000
+"FollowNarrator"=dword:00000000
+
+; 禁用允许快捷键启动叙述器
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"WinEnterLaunchEnabled"=dword:00000000
+
+; 启动旁白时禁用显示旁白首页
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NarratorHome]
+"AutoStart"=dword:00000000
+"MinimizeType"=dword:00000000
+
+; 禁用允许快捷键启动粘滞键
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+
+; 禁用允许快捷键启动切换键
+[HKEY_CURRENT_USER\Control Panel\Accessibility\ToggleKeys]
+"Flags"="34"
+
+; 禁用允许快捷键启动过滤键
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"Flags"="2"
+
+; 禁用 "让输入更简单 "功能
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="2"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"Sound on Activation"=dword:00000000
+"Warning Sounds"=dword:00000000
+
+; 叙述者讲话时，禁用降低其他应用程序音量的功能
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"DuckAudio"=dword:00000000
+
+; 禁用 让叙述者在朗读时使用标点符号确定停顿
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator]
+"IntonationPause"=dword:00000000
+
+; 禁用 更改打字时听到的声音
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator]
+"ReadHints"=dword:00000000
+"ErrorNotificationType"=dword:00000000
+"PlayAudioCues"=dword:00000000
+"EchoChars"=dword:00000000
+"EchoWords"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator\NoRoam]
+"EchoToggleKeys"=dword:00000000
+"EchoModifierKeys"=dword:00000000
+
+; 禁用使用旁白光标
+[HKEY_CURRENT_USER\Software\Microsoft\Narrator]
+"NarratorCursorHighlight"=dword:00000000
+"CoupleNarratorCursorKeyboard"=dword:00000000
+
+; 在 Outlook 中禁用 "提高旁白效率"（试验性）
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Narrator\NoRoam]
+"ScriptingEnabled"=dword:00000000
+
+; 禁用获取图片说明、页面标题和常用链接
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Narrator\NoRoam]
+"OnlineServicesEnabled"=dword:00000000
+
+; 禁用 启用 使用游戏控制器打开 Xbox 游戏栏
+[HKEY_CURRENT_USER\Software\Microsoft\GameBar]
+"UseNexusForGameBarEnabled"=dword:00000000
+
+; 禁用自动更新地图
+[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
+"AutoUpdateEnabled"=dword:00000000
+
+; 禁用通知
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"DatabaseMigrationCompleted"=dword:00000001
+"ToastEnabled"=dword:00000000
+"LockScreenToastEnabled"=dword:00000000
+
+; 平板电脑模式设置
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell]
+"TabletMode"=dword:00000000
+"SignInMode"=dword:00000001
+"ConvertibleSlateModePromptPreference"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarAppsVisibleInTabletMode"=dword:00000001
+"TaskbarAutoHideInTabletMode"=dword:00000000
+
+; 禁用跨设备共享
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CDP]
+"CdpSessionUserAuthzPolicy"=dword:00000000
+"NearShareChannelUserAuthzPolicy"=dword:00000000
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000
+
+; 禁用 "轻松访问 "设置 
+[HKEY_CURRENT_USER\Control Panel\Accessibility\HighContrast]
+"Flags"="4218"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
+"Flags"="130"
+"MaximumSpeed"="39"
+"TimeToMaximumSpeed"="3000"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\SoundSentry]
+"Flags"="0"
+"FSTextEffect"="0"
+"TextEffect"="0"
+"WindowsEffect"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\SlateLaunch]
+"ATapp"=""
+"LaunchAT"=dword:00000000
+
+; 禁用网站应用程序
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Shell\Associations\AppUrlAssociations\*.maps.windows.com\AppXw2ahfj46c0qbns74sb1bad9a5cpw8042\UserChoice]
+"Hash"="hkPbF+mnwJo="
+"Enabled"=dword:00000000
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Shell\Associations\AppUrlAssociations\maps.windows.com\AppXpmv5ep1jbsan9pzb5ys5a2x5244nckxh\UserChoice]
+"Hash"="k0yQGnTObnw="
+"Enabled"=dword:00000000
+
+; 禁用远程协助
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowFullControl"=dword:00000000
+"fAllowToGetHelp"=dword:00000000
+
+; 选择您的主色调 - 深色
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"ColorizationColor"=dword:c44c4a48
+"ColorizationAfterglow"=dword:c44c4a48
+"ColorizationGlassAttribute"=dword:00000000
+"AccentColor"=dword:ff484a4c
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentPalette"=hex(3):9B,9A,99,00,84,83,81,00,6D,6B,6A,00,4C,4A,48,00,36,\
+35,33,00,26,25,24,00,19,19,19,00,10,7C,10,00
+"StartColorMenu"=dword:ff333536
+"AccentColorMenu"=dword:ff484a4c
+
+; 禁用搜索历史记录
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+
+; FSE 修复
+[HKEY_CURRENT_USER\Software\Microsoft\GameBar] 
+"ShowStartupPanel"=dword:00000000 
+"GamePanelStartupTipIndex"=dword:00000003 
+"AllowAutoGameMode"=dword:00000001
+"AutoGameModeEnabled"=dword:00000001
+"UseNexusForGameBarEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\System\GameConfigStore] 
+"GameDVR_Enabled"=dword:00000000 
+"GameDVR_FSEBehaviorMode"=dword:00000002 
+"GameDVR_FSEBehavior"=dword:00000002 
+"GameDVR_HonorUserFSEBehaviorMode"=dword:00000001 
+"GameDVR_DXGIHonorFSEWindowsCompatible"=dword:00000001 
+"GameDVR_EFSEFeatureFlags"=dword:00000000 
+"GameDVR_DSEBehavior"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR] 
+"AllowGameDVR"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR] 
+"AppCaptureEnabled"=dword:00000000
+
+; 从资源管理器中隐藏 Onedrive
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CLASSES_ROOT\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+; 关闭电脑通过 USB 缓慢充电的通知 Windows
+[HKEY_CURRENT_USER\Software\Microsoft\Shell\USB]
+"NotifyOnWeakCharger"=dword:00000000
