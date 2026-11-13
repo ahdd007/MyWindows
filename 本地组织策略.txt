@@ -1,0 +1,5 @@
+reg delete "HKLM\SOFTWARE\Policies" /f
+reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies" /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies" /f
+reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\Policies" /f
+reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Policies" /f
